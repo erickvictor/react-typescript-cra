@@ -1,9 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Main /> should render the heading 1`] = `
-<main>
-  <h1>
-    React
+<main
+  class="styles__Wrapper-sc-1miciwg-0 hVfJMl"
+>
+  <h1
+    class="styles__Title-sc-1miciwg-1 bMuprP"
+  >
+    Suno Movies
   </h1>
+  <h2
+    class="styles__Description-sc-1miciwg-2 dOpybe"
+  >
+    It is an online database of information related to films
+  </h2>
 </main>
 `;
