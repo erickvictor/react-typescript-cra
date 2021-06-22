@@ -1,10 +1,14 @@
 import React from 'react'
+import { ThemeProvider } from 'styled-components'
 import Main from './components/Main'
-// import logo from './logo.svg'
-// import './App.css'
+import theme from './styles/theme'
 
-function App() {
-  return <Main />
+const App: React.FC = () => {
+  return (
+    <ThemeProvider theme={theme}>
+      <Main />
+    </ThemeProvider>
+  )
 }
 
 export default App
