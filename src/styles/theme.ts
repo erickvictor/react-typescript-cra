@@ -13,21 +13,22 @@ export default {
     normal: 400,
     bold: 600,
     sizes: {
+      xxsmall: '0.8rem',
       xsmall: '1.2rem',
       small: '1.4rem',
-      medium: '1.6rem',
+      medium: '1.667rem',
       large: '1.8rem',
-      xlarge: '2.0rem',
-      xxlarge: '2.8rem'
+      xlarge: '2.1rem',
+      xxlarge: '2.2rem'
     }
   },
   colors: {
     primary: '#F231A5',
     secondary: '#3CD3C1',
     mainBg: '#1B1B1F',
-    white: '#FAFAFA',
+    white: '#EAEAEA',
     black: '#030517',
-    lightGray: '#EAEAEA',
+    lightGray: '#9F9FA0',
     gray: '#8F8F8F',
     darkGray: '#2E2F42'
   },
