@@ -14,7 +14,7 @@ export default {
     bold: 600,
     sizes: {
       xxsmall: '0.8rem',
-      xsmall: '1.2rem',
+      xsmall: '1.112rem',
       small: '1.4rem',
       medium: '1.667rem',
       large: '1.8rem',
