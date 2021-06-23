@@ -7,11 +7,11 @@ import Logo from '../Logo'
 const Menu = () => (
   <S.Wrapper>
     <S.IconWrapper>
-      <MenuIcon />
+      <MenuIcon aria-label="Open Menu" />
     </S.IconWrapper>
     <Logo />
     <S.IconWrapper>
-      <SearchIcon />
+      <SearchIcon aria-label="Search" />
     </S.IconWrapper>
   </S.Wrapper>
 )

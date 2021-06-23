@@ -7,8 +7,7 @@ describe('<Main />', () => {
   it('should render the heading', () => {
     renderWithTheme(<Menu />)
 
-    expect(
-      screen.getByRole('img', { name: /suno movies/i })
-    ).toBeInTheDocument()
+    expect(screen.getByLabelText(/open menu/i)).toBeInTheDocument()
+    expect(screen.getByLabelText(/search/i)).toBeInTheDocument()
   })
 })
