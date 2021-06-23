@@ -30,9 +30,12 @@ export default {
     black: '#030517',
     lightGray: '#9F9FA0',
     gray: '#8F8F8F',
-    darkGray: '#2E2F42'
+    darkGray: '#2E2F42',
+    primaryGdt: 'linear-gradient(180deg, #fe3189 0%, #fe3189 50%)',
+    blackGdt: 'linear-gradient(180deg, #212125 0%, #2e2e35 100%)'
   },
   spacings: {
+    micro: '0.4rem',
     xxsmall: '0.8rem',
     xsmall: '1.6rem',
     small: '2.4rem',
