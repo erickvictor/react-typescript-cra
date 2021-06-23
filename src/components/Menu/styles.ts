@@ -1,10 +1,11 @@
 import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 
 export const Wrapper = styled.menu`
   ${({ theme }) => css`
     display: flex;
     align-items: center;
-    padding: ${theme.spacings.xxsmall} 0;
+    padding: ${theme.spacings.large} 0;
     justify-content: space-between;
     position: relative;
   `}
@@ -21,24 +22,35 @@ export const IconWrapper = styled.div`
   `}
 `
 
+export const ListWrapper = styled.div`
+  display: none;
+  ${media.greaterThan('medium')`
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin-right: 0.8rem;
+  `}
+`
+
 export const MenuNav = styled.div``
 
 export const MenuLink = styled.a`
   ${({ theme }) => css`
     position: relative;
+    color: ${theme.colors.white};
     font-size: ${theme.font.sizes.medium};
     margin: 0.3rem ${theme.spacings.small} 0;
     text-decoration: none;
+    text-transform: uppercase;
     text-align: center;
+    &:active {
+      padding-bottom: 4rem;
+      border-bottom: 3px solid ${theme.colors.primary};
+    }
     &:hover {
-      &::after {
-        content: '';
-        position: absolute;
-        display: block;
-        height: 0.3rem;
-        background-color: ${theme.colors.primary};
-        animation: hoverAnimation 0.2s forwards;
-      }
+      padding-bottom: 4rem;
+      border-bottom: 3px solid ${theme.colors.white};
+
       @keyframes hoverAnimation {
         from {
           width: 0;
@@ -99,6 +111,29 @@ export const MenuFull = styled.nav<MenuFullProps>`
       margin-bottom: ${theme.spacings.small};
       transform: ${isOpen ? 'translateY(0)' : 'translateY(3rem)'};
       transition: transform 0.3s ease-in-out;
+      &:hover {
+        padding-bottom: 0;
+        border-bottom: none;
+        &::after {
+          content: '';
+          position: absolute;
+          display: block;
+          height: 0.3rem;
+          background-color: ${theme.colors.primary};
+          animation: hoverAnimation 0.2s forwards;
+        }
+
+        @keyframes hoverAnimation {
+          from {
+            width: 0;
+            left: 50%;
+          }
+          to {
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
     }
   `}
 `
