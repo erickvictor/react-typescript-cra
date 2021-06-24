@@ -1,19 +1,17 @@
 import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.article`
-  ${({ theme }) => css`
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background-color: ${theme.colors.white};
-  `}
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 `
 
 export const ImageBox = styled.div`
   height: 32.82rem;
   width: 100%;
+  border-radius: 0.4rem;
   background: #f6f7f8;
   background-image: linear-gradient(
     to right,
@@ -28,6 +26,7 @@ export const ImageBox = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 0.4rem;
   }
   @keyframes placeholderShimmer {
     0% {
@@ -55,7 +54,7 @@ export const Title = styled.h3`
     font-size: ${theme.font.sizes.medium};
     line-height: ${theme.font.sizes.xlarge};
     font-weight: ${theme.font.bold};
-    color: ${theme.colors.black};
+    color: ${theme.colors.white};
   `}
 `
 
@@ -78,7 +77,7 @@ export const Average = styled.h5`
     display: inline-flex;
     font-size: ${theme.font.sizes.small};
     font-weight: ${theme.font.bold};
-    color: ${theme.colors.gray};
+    color: ${theme.colors.white};
     margin-left: ${theme.spacings.xxsmall};
   `}
 `
