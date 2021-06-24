@@ -23,12 +23,14 @@ export const Wrapper = styled.section<WrapperProps>`
       margin: 0 -${theme.spacings.xxsmall};
     }
 
-    .slick-slide > div {
-      margin: 0 ${theme.spacings.small};
-    }
-    .slick-list {
-      margin: 0 -${theme.spacings.small};
-    }
+    ${media.greaterThan('small')`
+      .slick-slide > div {
+        margin: 0 ${theme.spacings.xsmall};
+      }
+      .slick-list {
+        margin: 0 -${theme.spacings.xsmall};
+      }
+    `}
     .slick-prev,
     .slick-next {
       display: block;
