@@ -17,3 +17,9 @@ export const Basic: Story<MovieCardProps> = (args) => (
     <MovieCard {...args} />
   </div>
 )
+
+Basic.parameters = {
+  backgrounds: {
+    default: 'dark'
+  }
+}
