@@ -1,8 +1,8 @@
 import React from 'react'
-import Main from './components/Main'
+import Home from './templates/Home'
 
 const App: React.FC = () => {
-  return <Main />
+  return <Home />
 }
 
 export default App
