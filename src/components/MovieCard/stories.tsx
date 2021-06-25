@@ -20,6 +20,6 @@ export const Basic: Story<MovieCardProps> = (args) => (
 
 Basic.parameters = {
   backgrounds: {
-    default: 'dark'
+    default: 'suno-dark'
   }
 }
