@@ -1,10 +1,20 @@
 import React from 'react'
-import * as S from './styles'
+import { Container } from '../../components/Container'
+import Menu from '../../components/Menu'
+import moviesMock from '../../components/MovieCardSlider/mock'
+import MovieCardSlider from '../../components/MovieCardSlider'
+// import * as S from './styles'
 
 const Home = () => (
-  <S.Wrapper>
-    <h1>Home</h1>
-  </S.Wrapper>
+  <section>
+    <Container>
+      <Menu />
+    </Container>
+
+    <Container>
+      <MovieCardSlider items={moviesMock} />
+    </Container>
+  </section>
 )
 
 export default Home
