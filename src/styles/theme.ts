@@ -26,6 +26,7 @@ export default {
     primary: '#FE3189',
     secondary: '#3CD3C1',
     mainBg: '#1B1B1F',
+    menuBg: '#212125',
     white: '#EAEAEA',
     black: '#030517',
     lightGray: '#9F9FA0',

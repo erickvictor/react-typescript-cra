@@ -29,6 +29,9 @@ export const Wrapper = styled.h2<HeadingProps>`
     color: ${theme.colors[color!]};
     font-size: ${theme.font.sizes.medium};
     text-transform: uppercase;
+    span {
+      font-weight: ${theme.font.light};
+    }
     ${media.greaterThan('medium')`
       font-size: ${theme.font.sizes.xxlarge};
     `}

@@ -16,3 +16,9 @@ export const Default: Story<HeadingProps> = (args) => <Heading {...args} />
 Default.args = {
   children: 'Lançamentos da Semana'
 }
+
+Default.parameters = {
+  backgrounds: {
+    default: 'suno-dark'
+  }
+}

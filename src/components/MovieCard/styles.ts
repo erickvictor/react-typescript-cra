@@ -24,7 +24,7 @@ export const ImageBox = styled.div`
   animation: placeholderShimmer 1s linear infinite forwards;
   img {
     width: 100%;
-    height: 100%;
+    height: 32.82rem;
     border-radius: 0.4rem;
   }
   @keyframes placeholderShimmer {
@@ -39,9 +39,6 @@ export const ImageBox = styled.div`
 
 export const Info = styled.div`
   ${({ theme }) => css`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     position: relative;
     height: 100%;
     margin: ${theme.spacings.xsmall} 0 ${theme.spacings.micro};
