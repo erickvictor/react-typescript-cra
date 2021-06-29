@@ -3,6 +3,7 @@ import media from 'styled-media-query'
 
 import * as MovieCardSliderStyles from '../../components/MovieCardSlider/styles'
 import * as HeadingStyles from '../../components/Heading/styles'
+import * as ContainerStyles from '../../components/Container'
 
 const Sections = styled.section`
   ${({ theme }) => css`
@@ -35,9 +36,10 @@ export const SectionNews = styled(Sections)`
   ${({ theme }) => css`
     margin-top: ${theme.spacings.large};
     margin-bottom: calc(${theme.spacings.xxlarge} * 2);
-    ${media.lessThan('medium')`
-      padding-left: 5.4rem;
-      padding-right: 5.4rem;
-    `}
+    ${ContainerStyles.Container} {
+      ${media.lessThan('medium')`
+        width: 28rem;
+      `}
+    }
   `}
 `

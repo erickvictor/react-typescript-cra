@@ -7,9 +7,6 @@ type WrapperProps = Pick<MovieCardSliderProps, 'color'>
 
 export const Wrapper = styled.section<WrapperProps>`
   ${({ theme, color }) => css`
-    ${media.lessThan('medium')`
-      overflow-x: hidden;
-    `}
     .slick-track,
     .slick-list {
       display: flex;
@@ -33,25 +30,71 @@ export const Wrapper = styled.section<WrapperProps>`
     `}
     .slick-prev,
     .slick-next {
-      display: block;
-      color: ${theme.colors[color!]};
-      cursor: pointer;
       position: absolute;
       top: 50%;
+      display: block;
       width: 4rem;
       height: 4rem;
       padding: 0;
       transform: translate(0, -50%);
+      cursor: pointer;
+      color: ${theme.colors[color!]};
+    }
+    .slick-prev:hover,
+    .slick-prev:focus,
+    .slick-next:hover,
+    .slick-next:focus {
+      color: transparent;
+      outline: none;
+      background: transparent;
+    }
+    .slick-prev:hover:before,
+    .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before {
+      opacity: 1;
+    }
+    .slick-prev.slick-disabled:before,
+    .slick-next.slick-disabled:before {
+      opacity: 0.25;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      line-height: 1;
+
+      opacity: 0.75;
+      color: ${theme.colors[color!]};
+
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
     .slick-prev {
       left: -${theme.spacings.xxlarge};
     }
+    [dir='rtl'] .slick-prev {
+      right: -${theme.spacings.xxlarge};
+      left: auto;
+    }
+    .slick-prev:before {
+      content: '←';
+    }
+    [dir='rtl'] .slick-prev:before {
+      content: '→';
+    }
+
     .slick-next {
       right: -${theme.spacings.xxlarge};
     }
-    .slick-prev.slick-disabled,
-    .slick-next.slick-disabled {
-      visibility: hidden;
+    [dir='rtl'] .slick-next {
+      right: auto;
+      left: -${theme.spacings.xxlarge};
+    }
+    .slick-next:before {
+      content: '→';
+    }
+    [dir='rtl'] .slick-next:before {
+      content: '←';
     }
   `}
 `
