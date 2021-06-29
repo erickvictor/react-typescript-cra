@@ -40,14 +40,6 @@ export const Wrapper = styled.section<WrapperProps>`
       cursor: pointer;
       color: ${theme.colors[color!]};
     }
-    .slick-prev:hover,
-    .slick-prev:focus,
-    .slick-next:hover,
-    .slick-next:focus {
-      color: transparent;
-      outline: none;
-      background: transparent;
-    }
     .slick-prev:hover:before,
     .slick-prev:focus:before,
     .slick-next:hover:before,
@@ -95,6 +87,10 @@ export const Wrapper = styled.section<WrapperProps>`
     }
     [dir='rtl'] .slick-next:before {
       content: '←';
+    }
+    .slick-prev.slick-disabled,
+    .slick-next.slick-disabled {
+      visibility: hidden;
     }
   `}
 `
