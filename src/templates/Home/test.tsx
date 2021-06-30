@@ -1,4 +1,5 @@
 import React from 'react'
+import 'match-media-mock'
 import { screen } from '@testing-library/react'
 import { renderWithTheme } from '../../utils/tests/helpers'
 
@@ -9,5 +10,7 @@ describe('<Home />', () => {
     renderWithTheme(<Home />)
 
     expect(screen.getByLabelText(/open menu/i)).toBeInTheDocument()
+
+    expect(screen.getAllByRole('img', { name: /suno movies/i })).toHaveLength(1)
   })
 })

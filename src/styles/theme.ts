@@ -27,10 +27,11 @@ export default {
     secondary: '#3CD3C1',
     mainBg: '#1B1B1F',
     menuBg: '#212125',
+    cardBg: '#252529',
     white: '#EAEAEA',
     black: '#030517',
     lightGray: '#9F9FA0',
-    gray: '#8F8F8F',
+    gray: '#313136',
     darkGray: '#2E2F42',
     primaryGdt: 'linear-gradient(180deg, #fe3189 0%, #fe3189 50%)',
     blackGdt: 'linear-gradient(180deg, #212125 0%, #2e2e35 100%)'
