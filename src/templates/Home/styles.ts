@@ -1,9 +1,14 @@
 import styled, { css } from 'styled-components'
-import media from 'styled-media-query'
+import media, { generateMedia } from 'styled-media-query'
 
 import * as MovieCardSliderStyles from '../../components/MovieCardSlider/styles'
 import * as HeadingStyles from '../../components/Heading/styles'
 import * as ContainerStyles from '../../components/Container'
+
+const customMedia = generateMedia({
+  desktop: '950px',
+  tablet: '580px'
+})
 
 const Sections = styled.section`
   ${({ theme }) => css`
@@ -37,7 +42,15 @@ export const SectionNews = styled(Sections)`
     margin-top: ${theme.spacings.large};
     margin-bottom: calc(${theme.spacings.xxlarge} * 2);
     ${ContainerStyles.Container} {
-      ${media.lessThan('medium')`
+      ${media.lessThan('large')`
+        width: 78rem;
+      `}
+
+      ${customMedia.lessThan('desktop')`
+        width: 58rem;
+      `}
+
+      ${customMedia.lessThan('tablet')`
         width: 28rem;
       `}
     }

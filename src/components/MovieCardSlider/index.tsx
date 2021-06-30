@@ -24,19 +24,19 @@ const settings: SliderSettings = {
       }
     },
     {
-      breakpoint: 1024,
+      breakpoint: 1170,
       settings: {
-        slidesToShow: 4
+        slidesToShow: 3
       }
     },
     {
-      breakpoint: 570,
+      breakpoint: 950,
       settings: {
-        slidesToShow: 1
+        slidesToShow: 2
       }
     },
     {
-      breakpoint: 375,
+      breakpoint: 575,
       settings: {
         slidesToShow: 1
       }
