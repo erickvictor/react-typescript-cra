@@ -7,7 +7,7 @@ import * as ContainerStyles from '../../components/Container'
 
 const customMedia = generateMedia({
   desktop: '950px',
-  tablet: '580px'
+  tablet: '575px'
 })
 
 const Sections = styled.section`
