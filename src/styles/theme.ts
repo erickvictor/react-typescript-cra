@@ -19,7 +19,8 @@ export default {
       medium: '1.667rem',
       large: '1.8rem',
       xlarge: '2.1rem',
-      xxlarge: '2.2rem'
+      xxlarge: '2.2rem',
+      xxxlarge: '3.2rem'
     }
   },
   colors: {
@@ -30,6 +31,7 @@ export default {
     cardBg: '#252529',
     white: '#EAEAEA',
     black: '#030517',
+    lightBorder: '#FF7DB5',
     lightGray: '#9F9FA0',
     gray: '#313136',
     darkGray: '#2E2F42',
