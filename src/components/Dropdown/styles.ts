@@ -15,7 +15,7 @@ export const Content = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
-    background: ${theme.colors.white};
+    background: ${theme.colors.menuBg};
     color: ${theme.colors.black};
     margin-top: ${theme.spacings.small};
     position: absolute;
@@ -25,7 +25,7 @@ export const Content = styled.div`
       position: absolute;
       border-right: 1.2rem solid transparent;
       border-left: 1.2rem solid transparent;
-      border-bottom: 1.2rem solid ${theme.colors.white};
+      border-bottom: 1.2rem solid ${theme.colors.menuBg};
       top: -1.2rem;
       right: 2.4rem;
     }
