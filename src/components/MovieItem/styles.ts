@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
     width: 30rem;
     border-radius: ${theme.border.radius};
     display: flex;
+    margin: 0 3rem 3rem 0;
   `}
 `
 

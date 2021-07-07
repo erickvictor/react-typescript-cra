@@ -1,0 +1,348 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MovieList /> should render the movie list 1`] = `
+.c8 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c1 {
+  padding: 2rem;
+  border: 0.1rem solid #313136;
+  background: #252529;
+  width: 30rem;
+  border-radius: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 3rem 3rem 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 2rem;
+  width: 9.8rem;
+  height: 14.7rem;
+}
+
+.c3 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4rem;
+  object-fit: cover;
+}
+
+.c4 {
+  margin-top: 1.2rem;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+  color: #EAEAEA;
+}
+
+.c5 {
+  font-size: 1.667rem;
+  font-weight: 300;
+  color: #FE3189;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #EAEAEA;
+  margin-left: 0.8rem;
+}
+
+.c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #FE3189;
+  cursor: pointer;
+}
+
+.c7 svg {
+  width: 1.6rem;
+}
+
+.c0 {
+  background: #212125;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+<main
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        <img
+          alt="Liga da Justiça de Zack Snyder"
+          src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ArWn6gCi61b3b3hclD2L0LOk66k.jpg"
+        />
+      </div>
+      <div
+        class="styles__Content-sc-1jzflp4-3"
+      >
+        <h3
+          class="c4"
+        >
+          Liga da Justiça de Zack Snyder
+        </h3>
+        <h4
+          class="c5"
+        >
+          Ação, Aventura
+        </h4>
+        <div
+          class="c6"
+        >
+          <div
+            class="c7"
+            role="button"
+          >
+            <svg
+              aria-hidden="true"
+              aria-label="Average"
+              class="c8"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z"
+              />
+            </svg>
+          </div>
+          <h5
+            class="c9"
+          >
+            8.4
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        <img
+          alt="Liga da Justiça de Zack Snyder"
+          src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ArWn6gCi61b3b3hclD2L0LOk66k.jpg"
+        />
+      </div>
+      <div
+        class="styles__Content-sc-1jzflp4-3"
+      >
+        <h3
+          class="c4"
+        >
+          Liga da Justiça de Zack Snyder
+        </h3>
+        <h4
+          class="c5"
+        >
+          Ação, Aventura
+        </h4>
+        <div
+          class="c6"
+        >
+          <div
+            class="c7"
+            role="button"
+          >
+            <svg
+              aria-hidden="true"
+              aria-label="Average"
+              class="c8"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z"
+              />
+            </svg>
+          </div>
+          <h5
+            class="c9"
+          >
+            8.4
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        <img
+          alt="Liga da Justiça de Zack Snyder"
+          src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ArWn6gCi61b3b3hclD2L0LOk66k.jpg"
+        />
+      </div>
+      <div
+        class="styles__Content-sc-1jzflp4-3"
+      >
+        <h3
+          class="c4"
+        >
+          Liga da Justiça de Zack Snyder
+        </h3>
+        <h4
+          class="c5"
+        >
+          Ação, Aventura
+        </h4>
+        <div
+          class="c6"
+        >
+          <div
+            class="c7"
+            role="button"
+          >
+            <svg
+              aria-hidden="true"
+              aria-label="Average"
+              class="c8"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z"
+              />
+            </svg>
+          </div>
+          <h5
+            class="c9"
+          >
+            8.4
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        <img
+          alt="Liga da Justiça de Zack Snyder"
+          src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ArWn6gCi61b3b3hclD2L0LOk66k.jpg"
+        />
+      </div>
+      <div
+        class="styles__Content-sc-1jzflp4-3"
+      >
+        <h3
+          class="c4"
+        >
+          Liga da Justiça de Zack Snyder
+        </h3>
+        <h4
+          class="c5"
+        >
+          Ação, Aventura
+        </h4>
+        <div
+          class="c6"
+        >
+          <div
+            class="c7"
+            role="button"
+          >
+            <svg
+              aria-hidden="true"
+              aria-label="Average"
+              class="c8"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z"
+              />
+            </svg>
+          </div>
+          <h5
+            class="c9"
+          >
+            8.4
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+`
