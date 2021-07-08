@@ -28,15 +28,17 @@ const Menu = () => {
           <S.MenuLink href="#">Catálogo</S.MenuLink>
         </S.MenuNav>
       </S.ListWrapper>
-      <S.IconWrapper onClick={() => setIsSearch(true)}>
-        <SearchIcon
-          color={!isSearch ? '#EAEAEA' : '#FE3189'}
-          aria-label="Search"
-        />
-      </S.IconWrapper>
+      {!isSearch ? (
+        <S.IconWrapper onClick={() => setIsSearch(true)}>
+          <SearchIcon aria-label="Open Search" />
+        </S.IconWrapper>
+      ) : (
+        <S.IconWrapper onClick={() => setIsSearch(false)}>
+          <CloseIcon aria-label="Close Menu" color={'#FE3189'} />
+        </S.IconWrapper>
+      )}
 
       <S.MenuSearch aria-hidden={!isSearch} isSearch={isSearch}>
-        <CloseIcon aria-label="Close Menu" onClick={() => setIsSearch(false)} />
         <S.MenuNav>
           <Container>
             <TextField placeholder="Search" />
