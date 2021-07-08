@@ -6,35 +6,49 @@ export const Wrapper = styled.article`
   flex-direction: column;
   width: 100%;
   height: 100%;
+  cursor: pointer;
 `
 
 export const ImageBox = styled.div`
-  height: 32.82rem;
-  width: 100%;
-  border-radius: 0.4rem;
-  background: #f6f7f8;
-  background-image: linear-gradient(
-    to right,
-    #f6f7f8 0%,
-    #edeef1 20%,
-    #f6f7f8 40%,
-    #f6f7f8 100%
-  );
-  background-size: 80rem 32.82rem;
-  animation: placeholderShimmer 1s linear infinite forwards;
-  img {
-    width: 100%;
+  ${({ theme }) => css`
     height: 32.82rem;
+    width: 100%;
     border-radius: 0.4rem;
-  }
-  @keyframes placeholderShimmer {
-    0% {
-      background-position: -40rem 0;
+    background: #f6f7f8;
+    background-image: linear-gradient(
+      to right,
+      #f6f7f8 0%,
+      #edeef1 20%,
+      #f6f7f8 40%,
+      #f6f7f8 100%
+    );
+    background-size: 80rem 32.82rem;
+    animation: placeholderShimmer 1s linear infinite forwards;
+    img {
+      width: 100%;
+      height: 32.82rem;
+      border-radius: 0.4rem;
     }
-    100% {
-      background-position: 40rem 0;
+    :hover {
+      background: ${theme.colors.primary};
+      background-image: url('/play-icon-96.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 1;
+      animation: none;
     }
-  }
+    img:hover {
+      opacity: 0.3;
+    }
+    @keyframes placeholderShimmer {
+      0% {
+        background-position: -40rem 0;
+      }
+      100% {
+        background-position: 40rem 0;
+      }
+    }
+  `}
 `
 
 export const Info = styled.div`
