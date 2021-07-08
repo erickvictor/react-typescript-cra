@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import * as TextStyles from '../TextField/styles'
 import media from 'styled-media-query'
 
 export const Wrapper = styled.menu`
@@ -64,6 +65,52 @@ export const MenuLink = styled.a`
           left: 0;
         }
       }
+    }
+  `}
+`
+
+type MenuSearchProps = {
+  isSearch: boolean
+}
+
+export const MenuSearch = styled.nav<MenuSearchProps>`
+  ${({ theme, isSearch }) => css`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: ${theme.colors.menuBg};
+    top: 11.15rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: max-content;
+    position: fixed;
+    overflow: auto;
+    z-index: ${theme.layers.menu};
+    opacity: ${isSearch ? 1 : 0};
+    pointer-events: ${isSearch ? 'all' : 'none'};
+
+    > svg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: ${theme.spacings.xsmall};
+      color: ${theme.colors.white};
+      cursor: pointer;
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+
+    ${TextStyles.Wrapper} {
+      margin: ${theme.spacings.medium} 0;
+    }
+
+    ${MenuNav} {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex: 1;
+      flex-direction: column;
     }
   `}
 `
