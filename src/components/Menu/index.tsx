@@ -29,7 +29,10 @@ const Menu = () => {
         </S.MenuNav>
       </S.ListWrapper>
       <S.IconWrapper onClick={() => setIsSearch(true)}>
-        <SearchIcon aria-label="Search" />
+        <SearchIcon
+          color={!isSearch ? '#EAEAEA' : '#FE3189'}
+          aria-label="Search"
+        />
       </S.IconWrapper>
 
       <S.MenuSearch aria-hidden={!isSearch} isSearch={isSearch}>

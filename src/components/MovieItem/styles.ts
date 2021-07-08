@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
@@ -9,6 +10,10 @@ export const Wrapper = styled.div`
     border-radius: ${theme.border.radius};
     display: flex;
     margin: 0 3rem 3rem 0;
+  `}
+  ${media.lessThan('medium')`
+    margin: 0 0 3rem;
+    width: 100%;
   `}
 `
 

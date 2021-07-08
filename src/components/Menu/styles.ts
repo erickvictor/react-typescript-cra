@@ -73,19 +73,19 @@ type MenuSearchProps = {
   isSearch: boolean
 }
 
-export const MenuSearch = styled.nav<MenuSearchProps>`
-  ${({ theme, isSearch }) => css`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: ${theme.colors.menuBg};
+export const MenuSearch = styled.div<MenuSearchProps>`
+  ${media.greaterThan('medium')`
     top: 11.15rem;
+  `}
+  ${({ theme, isSearch }) => css`
+    background: ${theme.colors.menuBg};
+    top: 4.75rem;
     bottom: 0;
     left: 0;
     right: 0;
-    height: max-content;
     position: fixed;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     z-index: ${theme.layers.menu};
     opacity: ${isSearch ? 1 : 0};
     pointer-events: ${isSearch ? 'all' : 'none'};
@@ -103,6 +103,13 @@ export const MenuSearch = styled.nav<MenuSearchProps>`
 
     ${TextStyles.Wrapper} {
       margin: ${theme.spacings.medium} 0;
+    }
+
+    ${TextStyles.Input} {
+      ${media.lessThan('medium')`
+        font-size: ${theme.font.sizes.medium};
+        padding: 1rem 0;
+      `}
     }
 
     ${MenuNav} {
