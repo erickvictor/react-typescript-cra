@@ -2,27 +2,35 @@ import React from 'react'
 import { Container } from '../../components/Container'
 import Menu from '../../components/Menu'
 import Heading from '../../components/Heading'
-import moviesMock from '../../components/MovieCardSlider/mock'
+// import moviesMock from '../../components/MovieCardSlider/mock'
 import MovieCardSlider from '../../components/MovieCardSlider'
+import useMoviesService from '../../utils/services/useMoviesService'
+
 import * as S from './styles'
 
-const Home = () => (
-  <section>
-    <S.Menu>
-      <Container>
-        <Menu />
-      </Container>
-    </S.Menu>
+const Home = () => {
+  const service = useMoviesService()
 
-    <S.SectionNews>
-      <Container>
-        <Heading circleLeft>
-          Lançamentos<span> da Semana</span>
-        </Heading>
-        <MovieCardSlider items={moviesMock} />
-      </Container>
-    </S.SectionNews>
-  </section>
-)
+  return (
+    <section>
+      <S.Menu>
+        <Container>
+          <Menu />
+        </Container>
+      </S.Menu>
+      {service.status === 'loaded' && console.log(service.payload.results)}
+      <S.SectionNews>
+        <Container>
+          <Heading circleLeft>
+            Lançamentos<span> da Semana</span>
+          </Heading>
+          {service.status === 'loaded' && (
+            <MovieCardSlider items={service.payload.results} />
+          )}
+        </Container>
+      </S.SectionNews>
+    </section>
+  )
+}
 
 export default Home
