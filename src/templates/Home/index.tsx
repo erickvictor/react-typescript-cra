@@ -18,14 +18,14 @@ const Home = () => {
           <Menu />
         </Container>
       </S.Menu>
-      {service.status === 'loaded' && console.log(service.payload.results)}
+      {service.status === 'loaded' && console.log(service.payload)}
       <S.SectionNews>
         <Container>
           <Heading circleLeft>
             Lançamentos<span> da Semana</span>
           </Heading>
           {service.status === 'loaded' && (
-            <MovieCardSlider items={service.payload.results} />
+            <MovieCardSlider items={service.payload.data} />
           )}
         </Container>
       </S.SectionNews>

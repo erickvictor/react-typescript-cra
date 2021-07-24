@@ -1,7 +1,7 @@
 export interface Movie {
-  id: string
+  id: number
   title: string
   genre_ids: string[]
-  vote_average: string
+  vote_average: number
   poster_path: string
 }
