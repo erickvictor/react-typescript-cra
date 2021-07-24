@@ -25,10 +25,7 @@ const useMoviesService = () => {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const data = movies.results.map((movie: Movie) => ({
         // mantem todos os dados padroes
-        id: movie.id,
-        title: movie.title,
-        vote_average: movie.vote_average,
-        poster_path: movie.poster_path,
+        ...movie,
         // faz a busca por cada id de genero do genre_ids de cada filme
         genre_ids: movie.genre_ids.map(
           (id) =>

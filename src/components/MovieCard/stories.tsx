@@ -5,10 +5,12 @@ export default {
   title: 'MovieCard',
   component: MovieCard,
   args: {
+    id: 1202,
     title: 'Liga da Justiça de Zack Snyder',
-    genre: 'Ação, Aventura',
-    average: 8.4,
-    img: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ArWn6gCi61b3b3hclD2L0LOk66k.jpg'
+    genre_ids: ['Ação', 'Aventura'],
+    vote_average: 8.4,
+    poster_path:
+      'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ArWn6gCi61b3b3hclD2L0LOk66k.jpg'
   }
 } as Meta
 
