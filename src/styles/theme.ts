@@ -15,6 +15,7 @@ export default {
     sizes: {
       xxsmall: '0.8rem',
       xsmall: '1.112rem',
+      smallx: '1.25rem',
       small: '1.4rem',
       medium: '1.667rem',
       large: '1.8rem',
