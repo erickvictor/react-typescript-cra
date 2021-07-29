@@ -166,7 +166,7 @@ export const MenuFull = styled.nav<MenuFullProps>`
       color: ${theme.colors.black};
       font-weight: ${theme.font.bold};
       font-size: ${theme.font.sizes.xlarge};
-      margin-bottom: ${theme.spacings.small};
+      margin-bottom: 0;
       transform: ${isOpen ? 'translateY(0)' : 'translateY(3rem)'};
       transition: transform 0.3s ease-in-out;
       &:hover {

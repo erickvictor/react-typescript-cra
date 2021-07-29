@@ -23,7 +23,6 @@ const Sections = styled.section`
         margin-right: -2rem;
       `}
     }
-    margin-bottom: calc(${theme.spacings.large} * 2);
   `}
 `
 
@@ -31,16 +30,20 @@ export const Menu = styled(Sections)`
   ${({ theme }) => css`
     background: ${theme.colors.menuBg};
   `}
-  margin-bottom: 2rem;
-  ${media.greaterThan('medium')`
-    margin-bottom: 6rem;
-  `}
 `
 
 export const SectionNews = styled(Sections)`
   ${({ theme }) => css`
-    margin-top: ${theme.spacings.large};
-    margin-bottom: calc(${theme.spacings.xxlarge} * 2);
+    padding-top: 7.5rem;
+    padding-bottom: calc(${theme.spacings.xxlarge} * 2);
+
+    ${media.greaterThan('medium')`
+      background: url(bg.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    `}
+
     ${ContainerStyles.Container} {
       ${media.lessThan('large')`
         width: 78rem;
@@ -54,5 +57,13 @@ export const SectionNews = styled(Sections)`
         width: 28rem;
       `}
     }
+  `}
+`
+
+export const SectionHeading = styled.div`
+  ${({ theme }) => css`
+    border-top: 0.3rem solid ${theme.colors.primary};
+    background: ${theme.colors.menuBg};
+    padding: 3.7rem 0;
   `}
 `

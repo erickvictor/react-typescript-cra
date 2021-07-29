@@ -29,6 +29,13 @@ const Home = () => {
           )}
         </Container>
       </S.SectionNews>
+      <S.SectionHeading>
+        <Container>
+          <Heading circleLeft>
+            CATÁLOGO <span>Completo</span>
+          </Heading>
+        </Container>
+      </S.SectionHeading>
     </section>
   )
 }
