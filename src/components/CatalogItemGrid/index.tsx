@@ -32,12 +32,7 @@ const CatalogItemGrid = ({
           </S.IconButton>
           <S.Average>{average}</S.Average>
         </S.AvgBox>
-        <S.Overview>
-          Determinado a garantir que o sacrifício final do Superman não foi em
-          vão, Bruce Wayne alinha forças com Diana Prince com planos de recrutar
-          uma equipe de metahumanos para proteger o mundo de uma ameaça de
-          proporções catastróficas que se aproxima.
-        </S.Overview>
+        <S.Overview>{overview}</S.Overview>
       </S.Content>
     </S.MovieContent>
   </S.Wrapper>

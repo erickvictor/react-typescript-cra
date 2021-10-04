@@ -3,7 +3,6 @@ import media from 'styled-media-query'
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
-    padding: 2rem;
     width: 49.2rem;
     border-radius: ${theme.border.radius};
     display: flex;
