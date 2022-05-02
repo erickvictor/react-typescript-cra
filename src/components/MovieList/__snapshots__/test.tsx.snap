@@ -113,6 +113,13 @@ exports[`<MovieList /> should render the movie list 1`] = `
   flex-wrap: wrap;
 }
 
+@media (max-width:768px) {
+  .c1 {
+    margin: 0 0 3rem;
+    width: 100%;
+  }
+}
+
 <main
   class="c0"
 >
@@ -345,4 +352,4 @@ exports[`<MovieList /> should render the movie list 1`] = `
     </div>
   </div>
 </main>
-`
+`;

@@ -27,9 +27,7 @@ const MovieCard = ({
     <S.Info>
       <S.Title>{title}</S.Title>
       <S.Genre>
-        {genre_ids.map((item, idx) => (
-          <span key={`${item} - ${idx}`}>{`${item} `}</span>
-        ))}
+        <span>{genre_ids.join(', ')}</span>
       </S.Genre>
       <S.AvgBox>
         <S.IconButton role="button">
